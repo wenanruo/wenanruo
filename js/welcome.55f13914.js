@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["welcome"],{"1ddd":function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" welcome ")])},o=[],a={data:function(){return{}},methods:{}},r=a,u=t("2877"),d=Object(u["a"])(r,c,o,!1,null,"472ba2c3",null);n["default"]=d.exports}}]);
+//# sourceMappingURL=welcome.55f13914.js.map
