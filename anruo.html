@@ -8,6 +8,15 @@
     <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
     <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/et-line-fonts.css">
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/meanmenu.css">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <script src="static/js/modernizr-2.8.3.min.js"></script>
 </head>
 <style>
   .box {
@@ -46,12 +55,88 @@
   }
 </style>
 <body class="body">
+  <header id="sticky-header" class="header-fixed header-transparent">
+    <div class="header-area">
+      <div class="container sm-100">
+        <div class="row">
+          <div class="col-md-3 col-sm-2">
+            <div class="logo text-upper">
+              <!-- <h4><a href="">温安若的快乐家园</a></h4> -->
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-10">
+            <div class="menu-area hidden-xs">
+              <nav>
+                <ul class="basic-menu clearfix">
+                  <li><a href="index.html">我的主页</a></li>
+                  <!-- <li><a href="about.html">我的</a></li> -->
+                  <!-- PORTFOLIO -->
+                  <li><a href="contact.html">成长日记</a></li>
+                  <!-- END PORTFOLIO -->
+                  <li><a href="anruo.html" style="color: #000;">校园监控</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <!-- <li><a href="anruo.html">校园监控</a></li>												 -->
+                      <li><a href="pricing.html">Pricing</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>                                           
+                  <!-- BLOG -->
+                  <li>
+                    <a href="blog-grid-3-col.html">Blog</a>
+                    <ul>
+                      <li><a href="javascript:;">Single Post <i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                  </li>
+                  <!-- END BLOG -->
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>							
+            </div>
+            <!-- basic-mobile-menu --> 
+            <div class="basic-mobile-menu visible-xs">
+              <nav id="mobile-nav">
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href="about.html">about</a></li>
+                  <!-- PORTFOLIO -->
+                  <li><a href="portfolio-grid-3-cols.html">Portfolio</a></li>
+                  <!-- END PORTFOLIO -->
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="service.html">Service</a></li>												
+                      <li><a href="pricing.html">Pricing</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>                                           
+                  <!-- BLOG -->
+                  <li>
+                    <a href="blog-grid-3-col.html">Blog</a>
+                    <ul>
+                      <li><a href="javascript:;">Single Post <i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                  </li>
+                  <!-- END BLOG -->
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>									
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="content" style="padding-left: 100px;background-color: #33cbd5;">
     <img id="image" alt="我漂亮吗？" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1a06c8faf51a5f67aa1005c3982d7c981e404e87f3c6c1ccd485012a256155615f14a125047923a2623832d3a19277d5?pictype=scale&from=30113&version=3.3.3.3&fname=cd433559b1210ba71c837f718352a7e4.jpg&size=750" alt="">
     
     <div class="anruo">
       <div style="height: 35px;font-size: 20px;line-height: 35px;">温安若</div>
-      <div style="height: 35px;font-size: 16px;line-height: 35px;">宝宝2班</div>
+      <div style="height: 35px;font-size: 16px;line-height: 35px;">小2班</div>
     </div>
   </div>
   <img id="image1" alt="我漂亮吗？" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1a06c8faf51a5f67aa1005c3982d7c981e404e87f3c6c1ccd485012a256155615f14a125047923a2623832d3a19277d5?pictype=scale&from=30113&version=3.3.3.3&fname=cd433559b1210ba71c837f718352a7e4.jpg&size=750" alt="">
@@ -80,6 +165,14 @@
 </video>
 </div>
 <div style="text-align: center;font-size: 30px;margin: 30px 0;color: crimson;"> 灵溪镇洛基山幼儿园欢迎您！</div>
+<script src="static/js/jquery-1.12.0.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/isotope.pkgd.min.js"></script>
+        <script src="static/js/imagesloaded.pkgd.min.js"></script>
+        <script src="static/js/jquery.magnific-popup.min.js"></script>
+        <script src="static/js/jquery.meanmenu.js"></script>
+        <script src="static/js/plugins.js"></script>
+        <script src="static/js/main.js"></script>
 </body>
 <script>
    var url2 = "http://u912p9.auto.s.wanglitiaoyi.com/live/1818703343.m3u8"
