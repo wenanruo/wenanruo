@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安若宝宝</title>
+  <link href="https://cdn.bootcss.com/video.js/6.3.3/video-js.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/video.js/6.3.3/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<style>
+  .box {
+    font-size: 20px;
+    color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body {
+    margin: 0;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 70px;
+    color: #fff;
+    font-weight: 600;
+  }
+  #image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .anruo {
+    padding-left: 20px;
+  }
+  #image1 {
+    position: fixed;
+    width: 500px;
+    display: none;
+    z-index: 99999;
+
+  }
+</style>
+<body class="body">
+  <div class="content" style="padding-left: 100px;background-color: #33cbd5;">
+    <img id="image" alt="我漂亮吗？" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1a06c8faf51a5f67aa1005c3982d7c981e404e87f3c6c1ccd485012a256155615f14a125047923a2623832d3a19277d5?pictype=scale&from=30113&version=3.3.3.3&fname=cd433559b1210ba71c837f718352a7e4.jpg&size=750" alt="">
+    
+    <div class="anruo">
+      <div style="height: 35px;font-size: 20px;line-height: 35px;">温安若</div>
+      <div style="height: 35px;font-size: 16px;line-height: 35px;">宝宝2班</div>
+    </div>
+  </div>
+  <img id="image1" alt="我漂亮吗？" src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/1a06c8faf51a5f67aa1005c3982d7c981e404e87f3c6c1ccd485012a256155615f14a125047923a2623832d3a19277d5?pictype=scale&from=30113&version=3.3.3.3&fname=cd433559b1210ba71c837f718352a7e4.jpg&size=750" alt="">
+ <div class="box">
+   <h3>教室</h3>
+  <video id="videoBox" crossorigin="Anonymous" autoplay="autoplay" controls="controls" style="text-align: center;width: 1200px;height: 600px;" class="video-js vjs-default-skin vjs-big-play-centered" poster="http://wltylive.oss-cn-shanghai.aliyuncs.com/live/2052965000.jpg">
+
+</video>
+ </div>
+ <div class="box">
+  <h3>午睡</h3>
+ <video id="videoBox2" crossorigin="Anonymous" autoplay="autoplay" controls="controls" style="width: 1200px;height: 600px;" class="video-js vjs-default-skin vjs-big-play-centered" poster="http://wltylive.oss-cn-shanghai.aliyuncs.com/live/3868559671.jpg">
+   <source id="videoBox3" src="" type="application/x-mpegURL"/>
+</video>
+</div>
+<div class="box">
+  <h3>操场</h3>
+ <video id="videoBox4" crossorigin="Anonymous" autoplay="autoplay" controls="controls" style="width: 72rem;height: 36rem;" class="video-js vjs-default-skin vjs-big-play-centered" poster="http://wltylive.oss-cn-shanghai.aliyuncs.com/live/1818703343.jpg">
+   <source id="videoBox5" src="" type="application/x-mpegURL"/>
+</video>
+</div>
+<div class="box">
+  <h3>游泳</h3>
+ <video id="videoBox6" crossorigin="Anonymous" autoplay="autoplay" controls="controls" style="width: 1200px;height: 600px;" class="video-js vjs-default-skin vjs-big-play-centered" poster="http://wltylive.oss-cn-shanghai.aliyuncs.com/live/3741990984.jpg">
+   <source id="videoBox7" src="" type="application/x-mpegURL"/>
+</video>
+</div>
+<div style="text-align: center;font-size: 30px;margin: 30px 0;color: crimson;"> 灵溪镇洛基山幼儿园欢迎您！</div>
+</body>
+<script>
+   var url2 = "http://u912p9.auto.s.wanglitiaoyi.com/live/1818703343.m3u8"
+   var url1 = "http://u912p9.auto.s.wanglitiaoyi.com/live/3868559671.m3u8"
+   var url = "http://u912p1.auto.s.wanglitiaoyi.com/live/2052965000.m3u8"
+   var url3 = "http://u912p1.auto.s.wanglitiaoyi.com/live/3741990984.m3u8"
+   $('#videoBox1').attr('src',url)
+   $('#videoBox3').attr('src',url1)
+   $('#videoBox5').attr('src',url2)
+   $('#videoBox7').attr('src',url3)
+   player = videojs('videoBox', { "poster": "", "controls": "true"}, function() {
+    this.on('play', function() {
+        console.log('正在播放');
+    });
+    //暂停--播放完毕后也会暂停
+    this.on('pause', function() {
+        console.log("暂停中")
+    });
+    // 结束
+    this.on('ended', function () {
+      console.log('结束');
+    });
+  });
+  player = videojs('videoBox2', { "poster": "", "controls": "true"}, function() {
+    this.on('play', function() {
+        console.log('正在播放');
+    });
+    //暂停--播放完毕后也会暂停
+    this.on('pause', function() {
+        console.log("暂停中")
+    });
+    // 结束
+    this.on('ended', function () {
+      console.log('结束');
+    });
+  });
+  player = videojs('videoBox4', { "poster": "", "controls": "true"}, function() {
+    this.on('play', function() {
+        console.log('正在播放');
+    });
+    //暂停--播放完毕后也会暂停
+    this.on('pause', function() {
+        console.log("暂停中")
+    });
+    // 结束
+    this.on('ended', function () {
+      console.log('结束');
+    });
+  });
+  player = videojs('videoBox6', { "poster": "", "controls": "true"}, function() {
+    this.on('play', function() {
+        console.log('正在播放');
+    });
+    //暂停--播放完毕后也会暂停
+    this.on('pause', function() {
+        console.log("暂停中")
+    });
+    // 结束
+    this.on('ended', function () {
+      console.log('结束');
+    });
+  });
+  
+   
+      var videojsplay=videojs('videoBox');
+      videojsplay.src({src: url,
+          type: 'application/x-mpegURL'});
+      videojsplay.play();
+
+      var videojsplay1=videojs('videoBox2');
+      videojsplay1.src({src: url1,
+          type: 'application/x-mpegURL'});
+      videojsplay1.play();
+
+      var videojsplay2=videojs('videoBox4');
+      videojsplay2.src({src: url2,
+          type: 'application/x-mpegURL'});
+      videojsplay2.play();
+      var videojsplay2=videojs('videoBox6');
+      videojsplay2.src({src: url3,
+          type: 'application/x-mpegURL'});
+      videojsplay2.play();
+      var i =1
+    $('#image').click(function(){
+      i++
+      if(i%2==0){
+       $('#image1').show() 
+      }else {
+        $('#image1').hide()
+      }
+    })
+    $('.box').click(function(){
+      $('#image1').hide()
+    })
+</script>
+</html>
