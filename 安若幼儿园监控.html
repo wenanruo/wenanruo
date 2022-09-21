@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>安若幼儿园监控</title>
+    <!--https://www.bootcdn.cn/video.js/-->
+    <link href="https://cdn.bootcss.com/video.js/7.6.5/alt/video-js-cdn.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/video.js/6.6.2/video.js"></script>
+    <!--https://www.bootcdn.cn/videojs-contrib-hls/-->
+    <script src="https://cdn.bootcss.com/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+   <div style="display: flex;flex-direction: column;align-items: center;">
+    <h3>教室</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p9.auto.s.wanglitiaoyi.com/live/1030103722.m3u8?auth_key=1663744279-0-0-a1a76991dcec2cf1b62953970202393a" poster="http://wltylive.oss-cn-shanghai.aliyuncs.com/live/2052965000.jpg"  type="application/x-mpegURL">
+    </video>
+    <h3>午睡</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p2.auto.s.wanglitiaoyi.com/live/1521939176.m3u8?auth_key=1663737155-0-0-7bdcaf94335f328fb397e38a5f4f66d8"  type="application/x-mpegURL">
+    </video>
+    <h3>美劳室</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p2.auto.s.wanglitiaoyi.com/live/2517131279.m3u8?auth_key=1663737155-0-0-9fbc4c49f6c89529de68b8d117a9007b"  type="application/x-mpegURL">
+    </video>
+    <h3>游泳馆</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p1.auto.s.wanglitiaoyi.com/live/3741990984.m3u8?auth_key=1663737155-0-0-1059fb66732c53125b55fc7264992e66"  type="application/x-mpegURL">
+    </video>
+    <h3>围棋室</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p2.auto.s.wanglitiaoyi.com/live/0096888730.m3u8?auth_key=1663737155-0-0-25a98dfcf32e633ebb2186d795ae4f9f"  type="application/x-mpegURL">
+    </video>
+    <h3>操场</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p9.auto.s.wanglitiaoyi.com/live/1818703343.m3u8?auth_key=1663737155-0-0-ecf3ab80408c432b3c7f3794f459645f"  type="application/x-mpegURL">
+    </video>
+    <h3>跆拳道</h3>
+    <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="1080" height="708" data-setup='{}'>    
+        <source id="source" src="http://u912p2.auto.s.wanglitiaoyi.com/live/2063031505.m3u8?auth_key=1663737155-0-0-fcca604809a42fe806515c49929ec28e"  type="application/x-mpegURL">
+    </video>
+   </div>
+</body>
+<script>    
+    // videojs 简单使用  
+    var myVideo = videojs('myVideo',{
+        bigPlayButton : true, 
+        textTrackDisplay : false, 
+        posterImage: false,
+        errorDisplay : false,
+    })
+    myVideo.play() // 视频播放
+    myVideo.pause() // 视频暂停
+</script>
+</html>
